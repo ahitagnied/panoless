@@ -4,13 +4,13 @@
 
 > Ahitagni Das, Ashok Veeraraghavan, Vivek Boominathan
 
-![teaser](docs/static/Teaser.svg)
+![teaser](docs/static/Teaser.webp)
 
 PanoLess reconstructs the surrounding environment from images captured on only one side of a reflective surface — no panoramic capture required. It combines surface-aligned 2D Gaussian splats with a jointly optimized neural cubemap and an explicit visibility map that distinguishes well-observed environment directions from unsupported ones.
 
 ## Method
 
-![methodology](docs/static/Methodology.svg)
+![methodology](docs/static/Methodology.webp)
 
 ## Ablations
 
@@ -92,4 +92,4 @@ PanoLess builds on:
 
 ## Contact
 
-Ahitagni Das — [ad158@rice.edu](mailto:ad158@rice.edu)
+Ahitagni Das — [adas@rice.edu](mailto:adas@rice.edu)
