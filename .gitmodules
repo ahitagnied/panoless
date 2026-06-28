@@ -1,0 +1,4 @@
+[submodule "shinypartial"]
+	path = shinypartial
+	url = https://github.com/ahitagnied/shinypartial
+	shallow = true
