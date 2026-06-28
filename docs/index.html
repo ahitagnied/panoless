@@ -64,15 +64,20 @@
     <h2>Abstract</h2>
     <hr>
     <p>
-      Shiny objects and glass surfaces act as natural mirrors, encoding the surrounding environment
-      within their reflections. We exploit this to propose <b>PanoLess</b>, a method for recovering
-      high-fidelity environment maps from multi-view images captured on only one side of a reflective
-      surface. Our approach represents the scene with surface-aligned 2D Gaussian splats and uses
-      deferred shading to recover per-pixel normals and reflection directions, which supervise a
-      learnable neural cubemap. Beyond the environment map, PanoLess outputs a per-direction
-      <i>visibility map</i> indicating which parts of the reconstructed illumination are supported
-      by actual reflective observations. On our new Shiny Partial benchmark and real-world captures,
-      PanoLess outperforms existing reflection-aware methods by a large margin.
+      Reflections from shiny objects and glass façades naturally extend the field of view of a camera,
+      capturing the surrounding environment without the need to pan the camera or acquire a full panorama.
+      We propose <b>PanoLess</b>, a Gaussian-splat-based framework that reconstructs the environment from
+      images captured on only one side of a reflective surface. PanoLess leverages surface-aligned 2D
+      Gaussian splats with deferred shading to recover accurate per-pixel normals and reflection cues,
+      which are fused into a neural cubemap representation of the environment. In addition, PanoLess
+      produces a <i>visibility map</i> that explicitly denotes which regions of the environment are
+      supported by the partial reflective observations. Unlike existing inverse-rendering and
+      reflection-aware Gaussian-splatting approaches — which typically require full 360° coverage and
+      struggle under incomplete views — PanoLess enables consistent, physically grounded illumination
+      estimation from partial-view input. We show that PanoLess achieves high-fidelity and geometrically
+      consistent environment reconstruction, outperforming reflection-aware baselines on a new custom
+      synthetic benchmark and publicly available datasets, and demonstrating generalization to real-world
+      reflective captures.
     </p>
   </div>
 
